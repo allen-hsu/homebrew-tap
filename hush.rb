@@ -5,21 +5,21 @@
 class Hush < Formula
   desc "Local, agent-safe per-worktree secrets"
   homepage "https://github.com/allen-hsu/hush"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/allen-hsu/hush/releases/download/v0.1.2/hush_0.1.2_darwin_amd64.tar.gz"
-    sha256 "28b0b25019ae4bd57cc3d097351ce2b9944735bea889965298aa73f024d5ea13"
+    url "https://github.com/allen-hsu/hush/releases/download/v0.1.3/hush_0.1.3_darwin_amd64.tar.gz"
+    sha256 "8016d12f867a4431c57e254a474f6118e8b1c94ee0487afe75057b7476e4c016"
 
     define_method(:install) do
       bin.install "hush"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/allen-hsu/hush/releases/download/v0.1.2/hush_0.1.2_darwin_arm64.tar.gz"
-    sha256 "8419e29195d43e240ed4bc4c7a76b398496d6739bf03b12881d096752a40b886"
+    url "https://github.com/allen-hsu/hush/releases/download/v0.1.3/hush_0.1.3_darwin_arm64.tar.gz"
+    sha256 "de455c9a4efe753165fd1ef5289c81c433965d7e195496e402224bd68fb446d2"
 
     define_method(:install) do
       bin.install "hush"
