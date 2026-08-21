@@ -5,21 +5,21 @@
 class Gpc < Formula
   desc "Google Play Console CLI — agent-friendly wrapper over the Android Publisher API v3"
   homepage "https://github.com/allen-hsu/gpc"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.0/gpc_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0ad1725a3ed9f9db4755f7d699b34c74ad962d66093a291eb801bc6059c31caf"
+      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.1/gpc_0.1.1_darwin_amd64.tar.gz"
+      sha256 "9b7030152983ac43174762db22ff2c24783f4541116889397838c58296d00321"
 
       define_method(:install) do
         bin.install "gpc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.0/gpc_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f167d1fc436ba452b3307ed988518a82a6b88176a778ab61af1e6cca7fedcd40"
+      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.1/gpc_0.1.1_darwin_arm64.tar.gz"
+      sha256 "e8746c8d330cf548a8056369b88c13084695e193cecefd941481fdfbcd7223a8"
 
       define_method(:install) do
         bin.install "gpc"
@@ -29,15 +29,15 @@ class Gpc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.0/gpc_0.1.0_linux_amd64.tar.gz"
-      sha256 "cba68ec8486116e5a5439033a51c82af814b5ed04c8db56c6e7a5ee29f972c2e"
+      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.1/gpc_0.1.1_linux_amd64.tar.gz"
+      sha256 "94ca7d1598192c36937a05cce2a9d32a8e5b2f04988e26f3d6ff51a8ef604fe7"
       define_method(:install) do
         bin.install "gpc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.0/gpc_0.1.0_linux_arm64.tar.gz"
-      sha256 "bfd7c056ea2f80ea07faee1a0bbd0938328df84fcad338f0b6cea42d453e3b9f"
+      url "https://github.com/allen-hsu/gpc/releases/download/v0.1.1/gpc_0.1.1_linux_arm64.tar.gz"
+      sha256 "082f7fee67a81ac7ad33d002569baac08579c70cfc45f27d4dab3f2538a54673"
       define_method(:install) do
         bin.install "gpc"
       end
